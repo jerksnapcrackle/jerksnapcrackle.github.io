@@ -95,3 +95,11 @@ Also, a better installation for valve is keeping the electromagnet at the buttom
 2. [MOSFETの使い方(2SK4017)](https://nobita-rx7.hatenablog.com/entry/27544812)
 3. [蛇口にホースをワンタッチで取り付け！蛇口ニップルの選び方](https://www.takagi-member.jp/contents/detail/367)
 4. [にんにく太郎さんのGrizzco Blaster絵](https://www.pixiv.net/artworks/84511373)
+
+<script src="https://utteranc.es/client.js"
+        repo="jerksnapcrackle/jerksnapcrackle.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
