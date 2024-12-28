@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Grizzco Blaster"
+title:  "Grizzco Blaster(クマサン印のブラスター)"
 date:   2024-12-29 04:23:03 +0900
 categories: jekyll update
 ---
