@@ -38,8 +38,8 @@ The water spray part consists of
 
 > TODO : topology diagram
 
-### How does it work ?
-#### Hardware
+### 2.1 How does it work ?
+#### 2.1.1 Hardware
 The MCU generates a high voltage to open the MOSFET.
 Then the MOSFET enables the connection from power supply to solenoid valve.
 When the solenoid valve is turned on, it will open the valve by the electromagnet.
@@ -49,7 +49,7 @@ Therefore, we can control the water spray by generating a high or low voltage.
 
 The solenoid valve, however, may be difficult to open when the water pressure in hose is too high. In this case, we can connect a pressure regulator before the water supply. Then adjust the output pressure until the valve can open and close smoothly.
 
-#### Software
+#### 2.1.2 Software
 Considering that we also need to control other peripherals, the whole control logic will become very complex. Therefore a RTOS is necessary. For the ESP32, the FreeRTOS is currently the best chice.
 
 In the `valve_task`, when the trigger switch is pushed down : 
@@ -58,7 +58,7 @@ In the `valve_task`, when the trigger switch is pushed down :
 + **Normally Open/Closed Mode** : for debugging
 
 
-### Prototype
+### 2.2 Prototype
 
 The following video is a watergun prototype having multiple working modes :
 + normally open/closed mode
@@ -99,6 +99,8 @@ Also, a better installation for valve is keeping the electromagnet at the buttom
 
 
 ## 3. Shell
+
+> TODO
 
 ## References
 
