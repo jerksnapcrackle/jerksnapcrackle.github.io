@@ -110,11 +110,3 @@ Also, a better installation for valve is keeping the electromagnet at the buttom
 4. [にんにく太郎さんのGrizzco Blaster絵](https://www.pixiv.net/artworks/84511373)
 5. [How to use FreeRTOS to Multi-tasking in Arduino](https://wiki.seeedstudio.com/Software-FreeRTOS/)
 6. [ESP32でマルチコアを試す12行](https://qiita.com/Ninagawa123/items/5c3a9d40996836bd825f)
-
-<script src="https://utteranc.es/client.js"
-        repo="jerksnapcrackle/jerksnapcrackle.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
