@@ -40,9 +40,19 @@ I seems I can control the brightness very precisely using 16-bits.
 
 But according to my test, `ledcAttach` accepts at most 12-bits for esp32c3. But anyway, 4096 is far more detailed than 256 :space_invader:.
 
-### 1.2 Prototype
+### 1.2 Internal Liquid
+Beside giving a sense of high energy, liquid insde the case should also soften the light.
 
-Here is an prototype of the glowing pill cases.
+Here are some candidates:
++ water
++ baby oil
++ glycerin
+
+> TODO : test candidates
+
+### 1.3 Prototype
+
+Here is a prototype of the glowing pill cases.
 
 <div class="video-container">
   <iframe src="https://www.youtube.com/embed/qz-Ldavcd6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
