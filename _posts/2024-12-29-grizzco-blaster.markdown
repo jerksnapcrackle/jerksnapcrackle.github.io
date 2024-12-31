@@ -16,11 +16,40 @@ In the following three sections, I will describe these parts in detail.
 
 ## 1. Glowing Pill Case
 
-Although the cases do not glow in the game, I think a glowing case is cool-looking.
+Although the cases do not glow in the game, I think a glowing case is cool-looking. 
 
 ![pillcase](/assets/grizzco-blaster/pillcase.png)
 
-> TODO
+Components used are : 
+
++ **Pill Case $\times 4$**
++ **Power LED $\times 4$** : [KD-JP3W-WW-HS](https://www.amazon.co.jp/dp/B076KN5HP3)
++ **MOSFET $\times$ 4** : [2SK4017](https://akizukidenshi.com/catalog/g/g107597/)
++ **MCU** : [XIAO ESP32C3](https://akizukidenshi.com/catalog/g/g117454/)
+
+### 1.1 How does it work ?
+
+The basic idea of lighting a power LED is using the MOSFET. MCU controls the open/close of MOSFET. When MOSFET is opened, 3.2v/700mA is connected to the power LED. By controlling the open/close proportion of MOSFET in a short period, we can change the brightness of LED. This is simply down by the PWM.
+
+The classic `analogWrite` only support 8-bits sampling on esp32c3. It's a bit too coarse. After some searching, I found the `ledc` functions. According to [espressif's docs](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html), 
+
+> + resolution select resolution for LEDC channel.
+>   - range is 1-14 bits (1-20 bits for ESP32).
+
+I seems I can control the brightness very precisely using 16-bits.
+
+But according to my test, `ledcAttach` accepts at most 12-bits for esp32c3. But anyway, 4096 is far more detailed than 256 :space_invader:.
+
+### 1.2 Prototype
+
+Here is an prototype of the glowing pill cases.
+
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/qz-Ldavcd6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+
+> TODO : add states(charing, shotting, discharging)
 
 
 ## 2. Water Spray Mechanism
@@ -106,7 +135,8 @@ Also, a better installation for valve is keeping the electromagnet at the button
 
 1. [Getting Started with Seeed Studio XIAO ESP32C6](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)
 2. [MOSFETの使い方(2SK4017)](https://nobita-rx7.hatenablog.com/entry/27544812)
-3. [蛇口にホースをワンタッチで取り付け！蛇口ニップルの選び方](https://www.takagi-member.jp/contents/detail/367)
-4. [にんにく太郎さんのGrizzco Blaster絵](https://www.pixiv.net/artworks/84511373)
-5. [How to use FreeRTOS to Multi-tasking in Arduino](https://wiki.seeedstudio.com/Software-FreeRTOS/)
-6. [ESP32でマルチコアを試す12行](https://qiita.com/Ninagawa123/items/5c3a9d40996836bd825f)
+3. [LED Control (LEDC)](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html)
+4. [蛇口にホースをワンタッチで取り付け！蛇口ニップルの選び方](https://www.takagi-member.jp/contents/detail/367)
+5. [にんにく太郎さんのGrizzco Blaster絵](https://www.pixiv.net/artworks/84511373)
+6. [How to use FreeRTOS to Multi-tasking in Arduino](https://wiki.seeedstudio.com/Software-FreeRTOS/)
+7. [ESP32でマルチコアを試す12行](https://qiita.com/Ninagawa123/items/5c3a9d40996836bd825f)
