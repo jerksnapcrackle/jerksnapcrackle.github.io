@@ -69,13 +69,12 @@ Also, to make the charging and blinking look smooth, specialized brightness curv
 ### 1.4 Prototype
 
 Here is a prototype of the glowing pill cases working in
-+ charging -> discharging
-+ charging -> shottings
++ charging -> shottings -> discharging
 
 modes.
 
 <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/n_xs66xnFck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/syfjDi9edNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <br>
 
