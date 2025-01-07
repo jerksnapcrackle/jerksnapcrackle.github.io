@@ -1,7 +1,25 @@
 ---
 layout: post
-title:  "Simulated Recoil(ガエンffにリコイルを実装してみた)"
+title:  "Simulated Recoil(ガエンFFにリコイルを実装してみた)"
 date:   2024-12-22 07:00:03 +0900
 categories: jekyll update
 ---
 
+Since [trigger of my weapons can be pressed](https://x.com/jerksnapcrackle/status/1868614703200739632), it is necessary to enhance the physical feedback. 
+
+In this article, I will try to add recoil to the Douser Dualies FF(ガエンFF).
+
+I choose Douser Dualies FF because I like its shooting sound.
+
+![alt text](/assets/recoil/gaenff.png)
+
+## Components
++ Push-Pull Solenoid
++ NE555L-D08-T
++ resistor
++ capacitor
++ tact switch
+
+## Circuit
+
+The basic idea of reproduce recoil is using a 555 timer to trigger the Push-Pull Solenoid.
