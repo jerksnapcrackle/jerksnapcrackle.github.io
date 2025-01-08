@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-工事中
+![under-construction](/assets/other/under-construction.png)
