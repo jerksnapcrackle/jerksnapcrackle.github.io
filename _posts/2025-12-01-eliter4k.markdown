@@ -4,3 +4,15 @@ title:  "リッター4Kスコープ(E-liter 4K Scope)"
 date:   2025-12-01 07:00:00 +0900
 categories: jekyll update
 ---
+
+![gasoline_gun](/assets/eliter4k/gasoline_gun.png)
+
+![](/assets/eliter4k/front_parts.jpeg)
+
+![](/assets/eliter4k/front.jpeg)
+
+![](/assets/eliter4k/pan.jpeg)
+
+![](/assets/eliter4k/tank_connector.jpeg)
+
+![](/assets/eliter4k/tank_holder.jpeg)
