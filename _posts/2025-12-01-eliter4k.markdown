@@ -16,3 +16,7 @@ categories: jekyll update
 ![](/assets/eliter4k/grip_protector.png)
 
 ![](/assets/eliter4k/hose_connector.png)
+
+![](/assets/eliter4k/hidlo.jpeg)
+
+![](/assets/eliter4k/without_cover.jpeg)
